@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+        <!-- <form method ="post">
+            Please Enter Your Pin Number:<input type="text" name="number" id="number" />
+            <input type="button" name="submit" id="submit" onclick="getaction()" value="go"/>
+            <p id="demo"> </p>
+            
+            <div id="options12" style="display:none;">
+            <input type='radio' name='radio' onclick='myfunction(this.value)' value='1'/>Balance
+            <input type='radio' name='radio' onclick='myfunction(this.value)' value='2'/>Withdraw
+            <input type='radio' name='radio' onclick='myfunction(this.value)' value='3'/>Fastcash
+            </div>
+            <p id="demo1",></p>
+            
+            <div id="display" style="display:none;">
+            <label>Please Enter Your Withdraw Amount</label>
+            <input type="text" name="amount1" id="amount1" value=""/>
+            <input type="submit" name="submit1" value="submit" onclick="getamount()"/>
+            </div>
+            
+            <div id="display1" style="display:none;">
+            <label>Please Select Your Fastcash Option</label>
+            <select id="myselect1">
+            <option value="10000">10000</option>
+            <option value ="20000">20000</option>
+            < option value ="50000">50000</option>
+            </select>
+            <input type="submit" name="submit2" value="submit" onclick="getamount1()">
+            </div>
+            </form> -->
+            <div class="atmContainer">
+      <div class="atmTitle">ATM</div>
+
+      <div class="atmBody">
+        <div class="btnLeftContainer">
+          <button class="btnSelector" id="dePt" onclick="">Deposit</button>
+          <button class="btnSelector"id="dePO" onclick="">Withdraw</bu>
+          <button class="btnSelector" id="chBal" onclick="">Check Bal</button>
+        </div>
+
+        <div class="screen">
+          <div class="leftOptions">
+            <div class="selexD"></div>
+            <div class="selexW"> </div>
+            <div class="selexC"></div>
+          </div>
+          <div class="mainDisplay">
+            <div class="scrn2"></div>
+            <div class="scrn3"></div>
+          </div>
+          <div class="rightOptions">
+            <div class="selexE"></div>
+            <div class="selexS"></div>
+            <div class="selexR"></div>
+          </div>
+        </div>
+
+        <div class="btnRightContainer">
+          <button class="btnSelector" id="enPn" onclick="">Enter PIN</button>
+          <button class="btnSelector"id="swAcc" onclick="">Switch Acct.</button>
+          <button class="btnSelector"id="reTn" onclick="">Return</button>
+        </div>
+      </div>
+      <hr />
+      <div class="balContainer">
+        <p class="acctn">Checking Account:</p>
+        <p class="acctn1">Savings Account:</p>
+      </div>
+
+      <div class="keyPad">
+        <div class="rowOne">
+          <div onclick="findMyVal(event)" class="keys">1</div>
+          <div onclick="findMyVal(event)" class="keys">2</div>
+          <div onclick="findMyVal(event)" class="keys">3</div>
+        </div>
+
+        <div class="rowOne">
+          <div onclick="findMyVal(event)" class="keys">4</div>
+          <div onclick="findMyVal(event)" class="keys">5</div>
+          <div onclick="findMyVal(event)" class="keys">6</div>
+        </div>
+
+        <div class="rowOne">
+          <div onclick="findMyVal(event)" class="keys">7</div>
+          <div onclick="findMyVal(event)" class="keys">8</div>
+          <div onclick="findMyVal(event)" class="keys">9</div>
+        </div>
+
+        <div class="rowOne">
+          <div onclick="" class="keys" id="cLr">CLR</div>
+          <div onclick="findMyVal(event)" class="keys">0</div>
+          <div onclick="" class="keys">ENTER</div>
+        </div>
+
+        <div class="cardSlot" onclick="">Insert Card</div>
+      </div>
+    </div>
+</div>
+            
+        <script src="app.js"></script>
+    </body>
+</html>
