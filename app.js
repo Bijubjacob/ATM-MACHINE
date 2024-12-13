@@ -13,19 +13,19 @@
     const addToScreen = (info) => {
         screen.append(info)
     }
-    const clearScreen = () => {
-        screen.innerHTML = " "
-    }
     
     const findMyVal = (evt) =>{
         addToScreen(evt.target.textContent)
     }
-    
-    const grabFormula = () => {
-        let mathProblem  = screen.textContent
-        console.log(mathProblem)
-        return mathProblem
+
+    const clearScreen = () => {
+        screen.innerHTML = " "
     }
+    
+   clear.addEventListener("click", event => {
+            screen.innerHTML = ""
+            screen.append;
+        });
 
 
     //Intialise username value with varible userID
