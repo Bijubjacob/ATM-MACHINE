@@ -8,6 +8,7 @@
     let savingsAcc = document.querySelector(".acctn1");
     let clear = document.querySelector("#cLr");
     const ckBal = document.querySelector("#chBal");
+    
 
 
     const addToScreen = (info) => {
@@ -57,17 +58,17 @@ function username() {
        updateBalance1(accountBalance1);
 
        // Deposit EventListner to display balance
-
         dePosit.addEventListener("click", event => {
 
             updateBalance1(accountBalance);
             updateBalance1(accountBalance1);
 
 
-        screen.textContent = 'Checking Account: $' + accountBalance + '    Savings Account: $' + accountBalance1;
+        screen.innerHTML = 'Checking Account: $' + accountBalance + '<br>    Savings Account: $' + accountBalance1;
         screen.style.fontSize = "xx-large";
             
         });
+      
 
         clear.addEventListener("click", event => {
             screen.innerHTML = ""
@@ -80,13 +81,14 @@ function username() {
             updateBalance1(accountBalance1);
 
 
-        screen.textContent = 'Checking Account: $' + accountBalance + '    Savings Account: $' + accountBalance1;
+        screen.innerHTML = 'Checking Account: $' + accountBalance + '<br>    Savings Account: $' + accountBalance1 ;
         screen.style.fontSize = "xx-large";
         
         });
 
 
-}
+
+    }
       
     else {
         if (realUn != uName)
